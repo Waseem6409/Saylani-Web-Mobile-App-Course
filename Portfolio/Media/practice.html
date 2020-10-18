@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .first{
+      min-height: 100vh;
+      background-color: bisque;
+    }
+    .second{
+      min-height: 100vh;
+      background-color: cadetblue;
+    }
+  </style>
+  
+  <div class="first">
+    
+  </div>
+  <div class="second" id="second">
+  <button onclick="function scroll(){document.getElementByClassName('first').scrollTop = 0}">Click</button>
+  </div>
+  <script>
+    function scroll(){
+      console.log('Waseem')
+      document.getElementByClassName("dropdown-menu")[0].scrollTop = 0
+    }
+  </script>
+</body>
+</html>
