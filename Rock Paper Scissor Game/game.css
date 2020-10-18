@@ -1,0 +1,104 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to left, rgb(201, 94, 147), rgb(46, 79, 129),rgb(201, 94, 147))
+}
+.game-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.player1{
+    width: 250px;
+    height: 500px;
+}
+.screen{
+    width: 250px;
+    height: 200px;
+    background: rgba(255, 126, 105, 0.76);;
+    text-align: center;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    flex-direction: column;
+    overflow: hidden;
+}
+.screen h5{
+    color: white;
+    font-size: 20px;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+}
+.screen h2{
+    color: white;
+    animation-name: result-animation ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-duration: 1s;
+}
+.button-container{
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    width: 250px;
+    height:300px;
+    background:rgba(46, 79, 129,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.button{
+    outline: 0;
+    width: 70px;
+    height: 40px;
+    color: white;
+    background: #3634c7;
+    border: none;
+    border-radius: 20px;
+}
+.button1{
+    outline: 0;
+    width: 120px;
+    height: 40px;
+    color: white;
+    background: #3634c7;
+    border: none;
+    border-radius: 20px;
+    
+}
+.checkresult{
+    width: 400px;
+    text-align: center;
+}
+.checkresult h4{
+    margin-top: 30px;
+}
+.button:hover,.button1:hover{
+    color: black;
+    background-color: white;
+    transition: ease-in-out .3s;
+}
+.button:active,.button1:active{
+    opacity: 0.5;
+    transition: ease-in-out .1s;
+}
+@keyframes result-animation{
+    0%{
+        font-size: 20px;
+    }
+    100%{
+        font-size: 65px;
+    }
+}
