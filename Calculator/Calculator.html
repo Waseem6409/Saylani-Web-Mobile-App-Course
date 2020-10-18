@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h2 class="heading">Calculator<br>Waseem Munir</h2>
+        <form name=form>
+            <div class="text-container">
+            <input type="text" name="textview" id="textview">
+            </div>
+        </form>
+            <table>
+                <tr>
+                    <td><input class="button" type="button" onclick="clean()" value="C"></td>
+                    <td><input class="button" type="button" onclick="back()" value="<"></td>
+                    <td><input class="button" type="button" onclick="buttons('%')" value="%"></td>
+                    <td><input class="button" type="button" onclick="buttons('/')" value="/"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><input class="button" type="button" onclick="button(7)" value="7"></td>
+                    <td><input class="button" type="button" onclick="button(8)" value="8"></td>
+                    <td><input class="button" type="button" onclick="button(9)" value="9"></td>
+                    <td><input class="button" type="button" onclick="buttons('*')" value="x"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><input class="button" type="button" onclick="button(4)" value="4"></td>
+                    <td><input class="button" type="button" onclick="button(5)" value="5"></td>
+                    <td><input class="button" type="button" onclick="button(6)" value="6"></td>
+                    <td><input class="button" type="button" onclick="buttons('-')" value="-"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><input class="button" type="button" onclick="button(1)" value="1"></td>
+                    <td><input class="button" type="button" onclick="button(2)" value="2"></td>
+                    <td><input class="button" type="button" onclick="button(3)" value="3"></td>
+                    <td><input class="button" type="button" onclick="buttons('+')" value="+"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td colspan="2"><input class="button" onclick="button(0)" style="width: 105px;" type="button" value="0"></td>
+                    <td><input class="button" type="button" onclick="buttons('.')" value="."></td>
+                    <td><input class="button" onclick="equal()" type="button" value="="></td>
+                </tr>
+            </table>
+        
+    </div>
+    <script src="Calculator.js"></script>
+</body>
+</html>
