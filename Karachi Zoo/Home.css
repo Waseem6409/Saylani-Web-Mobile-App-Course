@@ -1,0 +1,231 @@
+html,body{
+    background: url("24866.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header a{
+    text-decoration:none;
+    text-align: center;
+}
+.logo{
+    float: left;
+    font-size:50px;
+    font-family: 'Poppins', sans-serif;
+    padding:15px 0 0 50px;
+    color: white;
+}
+.logo:hover{
+    color: #FDEFA6;
+}
+.h-menu{
+    padding-top: 40px;
+    padding-right: 30px;
+    float: right;
+}
+.h-menu a{
+    padding:10px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.h-menu a:hover{
+    color: #FDEFA6;
+}
+a.left
+{
+    position: relative;
+}
+.h-container{
+    background:rgba(0,0,0,0.5);
+    height: 550px;
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-around;
+    font-family: 'Poppins', sans-serif;
+}
+.i-t-container{
+    text-align: center;
+    background:rgba(0,255,255,0.6);
+    height: 220px;
+    width: 200px;
+    color: white;
+    transition: 1s;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.i-c-container{
+    text-align: center;
+    background:rgba(0,255,255,0.6);
+    height: 220px;
+    width: 200px;
+    color: white;
+    transition: 1s;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.i-a-container{
+    text-align: center;
+    background:rgba(0,255,255,0.6);
+    height: 220px;
+    width: 200px;
+    color: white;
+    transition: 1s;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.i-t-container:hover{
+    margin-bottom: 0;
+}
+.i-c-container:hover{
+    margin-bottom: 0;
+}
+.i-a-container:hover{
+    margin-bottom: 0;
+}
+.t-1{
+    width: 200px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.t-2{
+    width: 200px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    margin: 0;
+    padding: 0;
+}
+.scroll{
+    transition: 1s;
+}
+.scroll:hover{
+    margin-top: -220px;
+}
+.b-link{
+    /* margin-top: 80px; */
+    width: 100px;
+    color:#0E96B0;
+    /* background: transparent; */
+    border-style: solid;
+    border-radius: 1cm;
+    font-size: 0.5cm;
+    opacity: 0.5;
+    transition: .5s;
+    font-family: 'Poppins', sans-serif;
+}
+.b-link:hover{
+    animation: opacity-level;
+    animation-duration: 1s;
+    /* animation-direction: alternate; */
+    animation-fill-mode: forwards;
+    width: 110px;
+}
+.b-link:focus{
+    outline: 0;
+}
+.b-link:active{
+    background-color: #0F3F4E;
+    border-color: #0F3F4E;
+}
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FDEFA6;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+.f-menu{
+    padding-top: 40px;
+    padding-right: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.f-menu a,h2{
+    padding:20px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.f-menu a:hover{
+    color: #FDEFA6;
+}
+.header{
+    height: 100px;
+    background: rgba(17, 79, 94, 0.5);
+}
+.heading{
+    /* color: #FDEFA6; */
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+.h{
+    /* text-align: center; */
+    /* display: inline-block; */
+    font-weight: bolder;
+    font-size:20px;
+    font-family: 'Poppins', sans-serif;
+    backdrop-filter: blur(8px);
+    background: rgba(17, 79, 94, 0.5);
+    backdrop-filter: blur(8px);
+}
+.h-history{
+    color: #FDEFA6;
+}
+.p{
+    color: #87C5D0;
+}
+.footer{
+    /* background: rgba(17, 79, 94, 1); */
+    background: rgba(17, 79, 94, 0.5);;
+    height:180px;
+    position: relative;
+    clear: both;
+    border: solid 1px white ;
+    margin-top: 50px;
+}
+.main{
+    min-height: 100%;
+}
+.map{
+    opacity:0.5;
+}
+.map:hover{
+    animation: opacity-level;
+    animation-duration: 1s;
+    /* animation-direction: alternate; */
+    animation-fill-mode: forwards;
+}
+@keyframes opacity-level{
+    100%{
+        opacity: 0.8;
+    }
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
