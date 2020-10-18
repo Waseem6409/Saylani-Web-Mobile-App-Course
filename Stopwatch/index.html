@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch by Waseem Munir</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <h1 class="mainHeading">Stop Watch</h1>
+    </div>
+    <div class="time">
+      <h1 id="min">00</h1>
+      <h1 id="sec1">
+        :
+        <p id="sec">00</p>
+        :
+      </h1>
+      <h1 id="msec">00</h1>
+    </div>
+
+    <div class="buttons">
+      <span class="material-icons control">
+        timer
+      </span>
+
+      <span class="material-icons disabled" id="reset">
+        cached
+      </span>
+    </div>
+
+    <audio id="play" src="http://www.soundjay.com/button/beep-07.wav"></audio>
+    <script src="./app.js"></script>
+  </body>
+</html>

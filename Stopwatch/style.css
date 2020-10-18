@@ -1,0 +1,114 @@
+@font-face {
+  font-family: Digital;
+  src: url(./digital-7.ttf);
+}
+*{
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+body {
+  text-align: center;
+  background: url('/1303986.jpg');
+  color: #ea80fc;
+}
+
+.mainHeading {
+  font-family: Digital;
+  font-weight: 100;
+  margin: 100px auto;
+  font-size: 7em;
+  color: white;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  margin: 0 auto;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+#min,
+#sec1,
+#msec{
+  color: white;
+}
+#min,#msec {
+  font-family: Digital;
+  width: 150px;
+  font-size: 6em;
+  font-weight: 100;
+  margin-bottom: 0.9em;
+}
+
+#sec1 {
+  font-family: Digital;
+  font-size: 6em;
+  /* text-shadow: 3px 3px 10px #b64fc8, -3px -3px 10px #b64fc8; */
+  font-weight: 100;
+}
+
+#sec {
+  margin: 0;
+  width: 100px;
+  display: inline-block;
+}
+
+.buttons {
+  color: white;
+}
+
+.control:hover,
+#reset:hover {
+  text-shadow: 1px 1px 5px red, -1px -1px 5px red;
+}
+
+.material-icons {
+  font-size: 3rem !important;
+  padding: 30px;
+}
+
+.control {
+  cursor: pointer;
+}
+
+#reset {
+  cursor: pointer;
+}
+
+.disabled {
+  color: white;
+  opacity: .5;
+  cursor: not-allowed !important;
+}
+
+@media screen and (max-width: 600px) {
+  .mainHeading {
+    margin-top: 50px;
+    font-size: 4em;
+    line-height: 1.1;
+  }
+
+  .time {
+    width: 300px;
+  }
+
+  #min,
+  #msec {
+    font-size: 3em;
+    width: 70px;
+  }
+
+  #sec1 {
+    font-size: 3em;
+    width: 120px;
+  }
+
+  #sec {
+    width: 70px;
+  }
+}
